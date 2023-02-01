@@ -11,7 +11,6 @@ public class PosterManager {
     public PosterManager(int limit) {
         this.limit = limit;
     }
-
     public void addFilm(String film) {
         String[] tmp = new String[films.length + 1];
         for (int i = 0; i < films.length; i++) {
@@ -22,7 +21,6 @@ public class PosterManager {
     }
 
     public String[] findAll() {
-
         return films;
     }
 

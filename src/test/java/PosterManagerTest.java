@@ -14,7 +14,6 @@ public class PosterManagerTest {
 
         String[] expected = {"Film I", "Film II", "Film III", "Film IV", "Film V"};
         String[] actual = manager.findAll();
-
         Assertions.assertArrayEquals(expected, actual);
     }
 
