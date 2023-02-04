@@ -40,6 +40,17 @@ public class PosterManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
+    @Test
+    public void ShouldFindLastAddFilms0() { // Тестируем граничные значения, когда не добавлены фильмы
+        PosterManager manager = new PosterManager();
+
+        String[] expected = {};
+        String[] actual = manager.findLast();
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
     @Test
     public void ShouldFindLastAddFilms1() { // Тестируем граничные значения, когда добавлен 1 фильм
         PosterManager manager = new PosterManager();

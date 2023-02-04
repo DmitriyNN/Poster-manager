@@ -21,7 +21,6 @@ public class PosterManager {
     }
 
     public String[] findAll() {
-
         return films;
     }
 
